@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Om Nom Nom | Cart overview</title>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="sticky-top container-fluid">
+      <nav id="navbar-main" class="navbar navbar-expand-md justify-content-between row dark-pink-bg">
+        <div class="col-md-3 col-6 p-0 d-flex justify-content-start">
+          <a href="homepage.html">
+            <img class="h-100" src="assets/img/logo150x60.png" alt="" />
+          </a>
+        </div>
+        <div class="col-md-6 p-0 input-group d-none d-md-flex justify-content-center">
+          <input class="header-searchbar form-control" type="text" placeholder="Search products..." />
+          <div class="input-group-append">
+            <button class="btn light-pink-bg">
+              <i class="fas fa-search dark-pink"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 p-0 d-flex justify-content-end align-items-center">
+          <div class="header-link mx-sm-2 mx-1 my-0">
+            <a href="login.html">
+              <i class="fas fa-user-circle fa-2x light-pink"></i>
+            </a>
+          </div>
+          <div class="header-link mx-sm-2 mx-1 my-0">
+            <a href="cart-overview.html">
+              <i class="fas fa-shopping-cart fa-2x light-pink"></i>
+              <span id="cart-items-count">5 </span>
+            </a>
+          </div>
+          <button class="navbar-toggler ml-sm-3 ml-1 my-0" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+            <i class="fas fa-bars fa-lg light-pink"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Desktop Nav -->
+      <nav id="header-menu" class="navbar d-none d-md-flex row border-bottom light-pink-bg p-0">
+        <ul>
+          <li class="dropdown d-flex align-items-center">
+            <a href="product-catalogue.html">Sweets</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="product-catalogue.html">Bars</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Biscuits</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Bonbons</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Chocolate</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Gums</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Licorice</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Lollipops</a></li>
+            </ul>
+          </li>
+          <li class="dropdown d-flex align-items-center">
+            <a href="product-catalogue.html">Gifts</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="product-catalogue.html">Gifts for Him</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Gifts for Her</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Nameday Gifts</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Birthday Gifts</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Wedding Gifts</a></li>
+            </ul>
+          </li>
+          <li class="dropdown d-flex align-items-center">
+            <a href="product-catalogue.html">Bulk Candy</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="product-catalogue.html">Boxes</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Jars</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Pouches</a></li>
+            </ul>
+          </li>
+          <li class="dropdown d-flex align-items-center">
+            <a href="product-catalogue.html">Sugar Free & Vegan</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="product-catalogue.html">Vegan</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Sugar Free</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Gluten Free</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Lactose Free</a></li>
+            </ul>
+          </li>
+          <li class="d-flex align-items-center"><a href="product-catalogue.html">Sale</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Nav -->
+      <nav id="navbar-mobile" class="collapse d-md-none text-left light-pink-bg row p-2">
+        <ul class="navbar-nav w-100">
+          <li class="nav-item">
+            <a href="product-catalogue.html">Sweets</a>
+            <i class="fas fa-chevron-down float-right"></i>
+            <ul class="navbar-nav collapse pl-3">
+              <li class="nav-item"><a href="product-catalogue.html">Bars</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Biscuits</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Bonbons</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Chocolate</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Gums</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Licorice</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Lollipops</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="product-catalogue.html">Gifts</a>
+            <i class="fas fa-chevron-down float-right"></i>
+            <ul class="navbar-nav collapse pl-3">
+              <li class="nav-item"><a href="product-catalogue.html">Gifts for Him</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Gifts for Her</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Nameday Gifts</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Birthday Gifts</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Wedding Gifts</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="product-catalogue.html">Bulk Candy</a>
+            <i class="fas fa-chevron-down float-right"></i>
+            <ul class="navbar-nav collapse pl-3">
+              <li class="nav-item"><a href="product-catalogue.html">Boxes</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Jars</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Pouches</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="product-catalogue.html">Sugar Free & Vegan</a>
+            <i class="fas fa-chevron-down float-right"></i>
+            <ul class="navbar-nav collapse pl-3">
+              <li class="nav-item"><a href="product-catalogue.html">Vegan</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Sugar Free</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Gluten Free</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Lactose Free</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="product-catalogue.html">Sale</a></li>
+          <li class="nav-item mt-3">
+            <div class="input-group p-0">
+              <input class="header-searchbar form-control" type="text" placeholder="Search products..." />
+              <div class="input-group-append">
+                <button class="btn bg-white border">
+                  <i class="fas fa-search dark-pink"></i>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <main class="content container py-4">
+      <!-- Cart navigation -->
+      <nav class="cart-header row mx-auto">
+        <ul class="d-flex justify-content-center align-items-end px-0">
+          <li class="mb-2 h-100 px-2 pb-1 mx-3 border-bottom border-dark">
+            <a href="cart-overview.html">
+              <span class="d-none d-sm-block">Shopping cart (3)</span>
+              <span class="d-sm-none d-block">1</span>
+            </a>
+          </li>
+          <li class="h-100 px-2 pb-1 mx-3 border-bottom text-muted">
+            <a href="cart-information.html">
+              <span class="d-none d-sm-block">Billing & Shipping</span>
+              <span class="d-sm-none d-block">2</span>
+            </a>
+          </li>
+          <li class="h-100 px-2 pb-1 mx-3 border-bottom text-muted">
+            <a href="cart-payment.html">
+              <span class="d-none d-sm-block">Payment</span>
+              <span class="d-sm-none d-block">3</span>
+            </a>
+          </li>
+          <li class="h-100 px-2 pb-1 mx-3 border-bottom text-muted">
+            <a href="cart-confirmation.html">
+              <span class="d-none d-sm-block">Order summary</span>
+              <span class="d-sm-none d-block">4</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Cart products -->
+      <div class="container my-4 flex-fill text-left px-0">
+        <!-- Product header -->
+        <div class="row col-12 mx-2 text-center d-none d-md-flex">
+          <div class="col-md-7 col-8">ITEM</div>
+          <div class="col-2 d-none d-md-block">PRICE</div>
+          <div class="col-md-2 col-3">QUANTITY</div>
+          <div class="col-1"></div>
+        </div>
+        <hr class="my-2" />
+        <!-- Products -->
+        <div class="row mx-2 py-2 pb-3 pb-sm-0 border-bottom">
+          <div class="col-md-2 col-sm-3 col-12 cart-item-img px-0 pb-3 pb-sm-0"><img class="card-img" src="assets/img/bar1.png" alt="" /></div>
+          <div class="col-md-5 col-sm-6 col-12 m-auto">
+            <h6>DARK CHOCOLATE BAR WITH HAZELNUTS</h6>
+            <p class="cart-item-desc">Rich dark chocolate made from the best cocoa beans sustainably sourced from Tasmania. Smooth flavour of alpine</p>
+            <a class="d-none d-sm-block" href=""><span class="font-italic">See more details</span></a>
+          </div>
+          <div class="col-2 m-auto text-center d-none d-md-block"><span>€ 20,50</span></div>
+          <div class="col-sm-2 col-6 m-auto d-flex justify-content-center">
+            <input value="6" min="0" class="form-control quantity-input" type="number" />
+          </div>
+          <div class="col-sm-1 col-6 m-auto text-center"><i class="fas fa-2x fa-times-circle"></i></div>
+        </div>
+        <div class="row mx-2 py-2 pb-3 pb-sm-0 border-bottom">
+          <div class="col-md-2 col-sm-3 col-12 cart-item-img px-0 pb-3 pb-sm-0"><img class="card-img" src="assets/img/biscuit1.png" alt="" /></div>
+          <div class="col-md-5 col-sm-6 col-12 m-auto">
+            <h6>DARK CHOCOLATE BAR WITH HAZELNUTS</h6>
+            <p class="cart-item-desc">Rich dark chocolate made from the best cocoa beans sustainably sourced from Tasmania. Smooth flavour of alpine</p>
+            <a class="d-none d-sm-block" href=""><span class="font-italic">See more details</span></a>
+          </div>
+          <div class="col-2 m-auto text-center d-none d-md-block"><span>€ 3,50</span></div>
+          <div class="col-sm-2 col-6 m-auto d-flex justify-content-center">
+            <input value="3" min="0" class="form-control quantity-input" type="number" />
+          </div>
+          <div class="col-sm-1 col-6 m-auto text-center"><i class="fas fa-2x fa-times-circle"></i></div>
+        </div>
+        <div class="row mx-2 py-2 pb-3 pb-sm-0">
+          <div class="col-md-2 col-sm-3 col-12 cart-item-img px-0 pb-3 pb-sm-0"><img class="card-img" src="assets/img/cake1.png" alt="" /></div>
+          <div class="col-md-5 col-sm-6 col-12 m-auto">
+            <h6>DARK CHOCOLATE BAR WITH HAZELNUTS</h6>
+            <p class="cart-item-desc">Rich dark chocolate made from the best cocoa beans sustainably sourced from Tasmania. Smooth flavour of alpine</p>
+            <a class="d-none d-sm-block" href=""><span class="font-italic">See more details</span></a>
+          </div>
+          <div class="col-2 m-auto text-center d-none d-md-block"><span>€ 9,09</span></div>
+          <div class="col-sm-2 col-6 m-auto d-flex justify-content-center">
+            <input value="1" min="0" class="form-control quantity-input" type="number" />
+          </div>
+          <div class="col-sm-1 col-6 m-auto text-center"><i class="fas fa-2x fa-times-circle"></i></div>
+        </div>
+        <hr class="my-2" />
+        <div class="text-right my-4 mx-4 h5">
+          <span>Subtotal:</span>
+          <span id="cart-price">€ 78,75</span>
+        </div>
+        <div class="row row-gap justify-content-around mx-2">
+          <div class="has-icon-left">
+            <i class="fas fa-lg fa-angle-left icon"></i>
+            <button class="btn light-pink-bg">Continue shopping</button>
+          </div>
+          <div class="has-icon-right">
+            <i class="fas fa-lg fa-angle-right icon"></i>
+            <button class="btn light-pink-bg">Proceed to checkout</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Start -->
+    <footer class="border-top">
+      <div class="container pt-md-4 pt-2 pb-md-2">
+        <div class="row">
+          <div class="col-md-7 col-12">
+            <div class="row">
+              <div class="col-md-6 col-12 mb-md-0 mb-2">
+                <ul class="list-unstyled">
+                  <li><a href="">About us</a></li>
+                  <li><a href="">Contact us</a></li>
+                  <li><a href="">Terms & conditions</a></li>
+                  <li><a href="">Privacy policy</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-12 mb-md-0 mb-2">
+                <ul class="list-unstyled">
+                  <li><a href="">Shipping policy</a></li>
+                  <li><a href="">Orders & Returns</a></li>
+                  <li><a href="">Allergy information</a></li>
+                  <li><a href="">FAQ</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-12 mb-md-0 mb-3">
+            <h6>Subscribe for sweet news & deals</h6>
+            <form id="form-subscribe" action="#">
+              <div class="input-group d-flex">
+                <input class="form-control" type="email" placeholder="Enter e-mail address" />
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-outline-dark form-control submit">Subscribe</button>
+                </div>
+              </div>
+              <small class="text-muted float-left ml-1">Get best discounts to your mailbox</small>
+            </form>
+          </div>
+        </div>
+        <div class="row mt-md-3 pt-md-3 border-top">
+          <div class="col-md-6 col-12 mb-md-0 mb-4">
+            <p class="copyright mb-0">
+              Copyright ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Dlhy & Hrytsyna
+            </p>
+          </div>
+          <div class="col-md-6 col-12 text-md-right text-left">
+            <ul class="p-0">
+              <li class="d-inline mx-2">
+                <a href=""><i class="fab fa-facebook fa-2x text-muted"></i></a>
+              </li>
+              <li class="d-inline mx-2">
+                <a href=""><i class="fab fa-instagram fa-2x text-muted"></i></a>
+              </li>
+              <li class="d-inline mx-2">
+                <a href=""><i class="fab fa-twitter fa-2x text-muted"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

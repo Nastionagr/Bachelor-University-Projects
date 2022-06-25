@@ -1,0 +1,12 @@
+composer create-project --prefer-dist laravel/laravel .
+
+php artisan migrate
+
+# VSECKO (RESOURCE A NEVIEM CO VSETKO)
+php artisan make:model Task -a 
+
+# MODEL + MIGRACIA
+php artisan make:model Task -m
+
+# iBA MIGRACIA
+php artisan make:migration create_flights_table

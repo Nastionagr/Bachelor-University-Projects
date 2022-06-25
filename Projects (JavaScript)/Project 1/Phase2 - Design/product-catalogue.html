@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Om Nom Nom | Biscuits</title>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="sticky-top container-fluid">
+      <nav id="navbar-main" class="navbar navbar-expand-md justify-content-between row dark-pink-bg">
+        <div class="col-md-3 col-6 p-0 d-flex justify-content-start">
+          <a href="homepage.html">
+            <img class="h-100" src="assets/img/logo150x60.png" alt="" />
+          </a>
+        </div>
+        <div class="col-md-6 p-0 input-group d-none d-md-flex justify-content-center">
+          <input class="header-searchbar form-control" type="text" placeholder="Search products..." />
+          <div class="input-group-append">
+            <button class="btn light-pink-bg">
+              <i class="fas fa-search dark-pink"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 p-0 d-flex justify-content-end align-items-center">
+          <div class="header-link mx-sm-2 mx-1 my-0">
+            <a href="login.html">
+              <i class="fas fa-user-circle fa-2x light-pink"></i>
+            </a>
+          </div>
+          <div class="header-link mx-sm-2 mx-1 my-0">
+            <a href="cart-overview.html">
+              <i class="fas fa-shopping-cart fa-2x light-pink"></i>
+              <span id="cart-items-count">5 </span>
+            </a>
+          </div>
+          <button class="navbar-toggler ml-sm-3 ml-1 my-0" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+            <i class="fas fa-bars fa-lg light-pink"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Desktop Nav -->
+      <nav id="header-menu" class="navbar d-none d-md-flex row border-bottom light-pink-bg p-0">
+        <ul>
+          <li class="dropdown d-flex align-items-center">
+            <a href="product-catalogue.html">Sweets</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="product-catalogue.html">Bars</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Biscuits</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Bonbons</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Chocolate</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Gums</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Licorice</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Lollipops</a></li>
+            </ul>
+          </li>
+          <li class="dropdown d-flex align-items-center">
+            <a href="product-catalogue.html">Gifts</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="product-catalogue.html">Gifts for Him</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Gifts for Her</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Nameday Gifts</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Birthday Gifts</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Wedding Gifts</a></li>
+            </ul>
+          </li>
+          <li class="dropdown d-flex align-items-center">
+            <a href="product-catalogue.html">Bulk Candy</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="product-catalogue.html">Boxes</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Jars</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Pouches</a></li>
+            </ul>
+          </li>
+          <li class="dropdown d-flex align-items-center">
+            <a href="product-catalogue.html">Sugar Free & Vegan</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="product-catalogue.html">Vegan</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Sugar Free</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Gluten Free</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Lactose Free</a></li>
+            </ul>
+          </li>
+          <li class="d-flex align-items-center"><a href="product-catalogue.html">Sale</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Nav -->
+      <nav id="navbar-mobile" class="collapse d-md-none text-left light-pink-bg row p-2">
+        <ul class="navbar-nav w-100">
+          <li class="nav-item">
+            <a href="product-catalogue.html">Sweets</a>
+            <i class="fas fa-chevron-down float-right"></i>
+            <ul class="navbar-nav collapse pl-3">
+              <li class="nav-item"><a href="product-catalogue.html">Bars</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Biscuits</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Bonbons</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Chocolate</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Gums</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Licorice</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Lollipops</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="product-catalogue.html">Gifts</a>
+            <i class="fas fa-chevron-down float-right"></i>
+            <ul class="navbar-nav collapse pl-3">
+              <li class="nav-item"><a href="product-catalogue.html">Gifts for Him</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Gifts for Her</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Nameday Gifts</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Birthday Gifts</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Wedding Gifts</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="product-catalogue.html">Bulk Candy</a>
+            <i class="fas fa-chevron-down float-right"></i>
+            <ul class="navbar-nav collapse pl-3">
+              <li class="nav-item"><a href="product-catalogue.html">Boxes</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Jars</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Pouches</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="product-catalogue.html">Sugar Free & Vegan</a>
+            <i class="fas fa-chevron-down float-right"></i>
+            <ul class="navbar-nav collapse pl-3">
+              <li class="nav-item"><a href="product-catalogue.html">Vegan</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Sugar Free</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Gluten Free</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Lactose Free</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="product-catalogue.html">Sale</a></li>
+          <li class="nav-item mt-3">
+            <div class="input-group p-0">
+              <input class="header-searchbar form-control" type="text" placeholder="Search products..." />
+              <div class="input-group-append">
+                <button class="btn bg-white border">
+                  <i class="fas fa-search dark-pink"></i>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <main class="content container my-4">
+      <div class="row flex-fill text-left">
+        <!-- Filter sidebar -->
+        <section id="filter" class="col-lg-3 col-md-4 mt-4 mb-md-0 mb-3">
+          <h4 class="mb-4 pb-2 border-bottom">Filter</h4>
+          <div class="mb-3 card">
+            <header class="card-header sidebar-filter-header d-flex justify-content-between">
+              <h5 class="m-0">Brand</h5>
+              <i class="fas fa-chevron-down dropdown-icon"></i>
+            </header>
+            <ul class="card-body sidebar-filter-item-container mb-1">
+              <li class="form-check my-2">
+                <input class="form-check-input" type="checkbox" name="brand" value="Om Nom Nom" id="brand-1" />
+                <label class="form-check-label" for="brand-1">Om Nom Nom</label>
+              </li>
+              <li class="form-check my-2">
+                <input class="form-check-input" type="checkbox" name="brand" value="BestChoco" id="brand-2" />
+                <label class="form-check-label" for="brand-2">Best Choco</label>
+              </li>
+              <li class="form-check my-2">
+                <input class="form-check-input" type="checkbox" name="brand" value="Milkor" id="brand-3" />
+                <label class="form-check-label" for="brand-3"> Milkor </label>
+              </li>
+              <li class="form-check my-2">
+                <input class="form-check-input" type="checkbox" name="brand" value="Cadburror" id="brand-4" />
+                <label class="form-check-label" for="brand-4"> Cadburror </label>
+              </li>
+              <li class="form-check my-2">
+                <input class="form-check-input" type="checkbox" name="brand" value="ChocoDream" id="brand-5" />
+                <label class="form-check-label" for="brand-5"> ChocoDream </label>
+              </li>
+              <li class="form-check my-2">
+                <input class="form-check-input" type="checkbox" name="brand" value="Choco World" id="brand-6" />
+                <label class="form-check-label" for="brand-6"> Choco World </label>
+              </li>
+            </ul>
+          </div>
+          <div class="mb-3 card">
+            <header class="card-header sidebar-filter-header d-flex justify-content-between">
+              <h5 class="m-0">Flavour</h5>
+              <i class="fas fa-chevron-down dropdown-icon"></i>
+            </header>
+            <ul class="card-body sidebar-filter-item-container mb-1">
+              <li class="form-check my-2">
+                <input class="form-check-input" type="checkbox" name="flavour" value="Caramel" id="flavour-1" />
+                <label class="form-check-label" for="flavour-1">Caramel</label>
+              </li>
+              <li class="form-check my-2">
+                <input class="form-check-input" type="checkbox" name="flavour" value="Coconut" id="flavour-2" />
+                <label class="form-check-label" for="flavour-2">Coconut</label>
+              </li>
+              <li class="form-check my-2">
+                <input class="form-check-input" type="checkbox" name="flavour" value="Cookies" id="flavour-3" />
+                <label class="form-check-label" for="flavour-3"> Cookies </label>
+              </li>
+              <li class="form-check my-2">
+                <input class="form-check-input" type="checkbox" name="flavour" value="Milk" id="flavour-4" />
+                <label class="form-check-label" for="flavour-4"> Milk </label>
+              </li>
+              <li class="form-check my-2">
+                <input class="form-check-input" type="checkbox" name="flavour" value="Oreo" id="flavour-5" />
+                <label class="form-check-label" for="flavour-5"> Oreo </label>
+              </li>
+              <li class="form-check my-2">
+                <input class="form-check-input" type="checkbox" name="flavour" value="Strawberry" id="flavour-6" />
+                <label class="form-check-label" for="flavour-6"> Strawberry </label>
+              </li>
+            </ul>
+          </div>
+          <div class="mb-3 card">
+            <header class="card-header sidebar-filter-header d-flex justify-content-between">
+              <h5 class="m-0">Season</h5>
+              <i class="fas fa-chevron-down dropdown-icon"></i>
+            </header>
+            <ul class="card-body sidebar-filter-item-container mb-1">
+              <li class="form-check my-2">
+                <input class="form-check-input" type="hidden" name="season" value="Halloween" id="season-1" />
+                <label class="form-check-label" for="season-1">Halloween</label>
+              </li>
+              <li class="form-check my-2">
+                <input class="form-check-input" type="hidden" name="season" value="Christmas" id="season-2" />
+                <label class="form-check-label" for="season-2">Christmas</label>
+              </li>
+              <li class="form-check my-2">
+                <input class="form-check-input" type="hidden" name="season" value="Easter" id="season-3" />
+                <label class="form-check-label" for="season-3"> Easter </label>
+              </li>
+            </ul>
+          </div>
+          <div class="mb-3 card">
+            <header class="card-header sidebar-filter-header d-flex justify-content-between">
+              <h5 class="m-0">Price</h5>
+              <i class="fas fa-chevron-down dropdown-icon"></i>
+            </header>
+            <div class="card-body px-3 mb-1">
+              <div class="d-flex justify-content-center mb-4">
+                <div class="price-min col p-0 d-flex position-relative">
+                  <input id="input-price-min" class="w-100 px-2" type="text" />
+                  <span>€</span>
+                </div>
+                <span class="mx-3">-</span>
+                <div class="price-max col p-0 d-flex position-relative">
+                  <input id="input-price-max" class="w-100 px-2" type="text" />
+                  <span>€</span>
+                </div>
+              </div>
+              <div class="sidebar-filter-item mx-3 py-2">
+                <div id="sidebar-price-slider"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Catalogue of products -->
+        <section class="col-lg-9 col-md-8">
+          <h4 class="d-md-none mb-4 pb-2 border-bottom">Products</h4>
+          <nav class="catalogue-breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Sweets</a></li>
+              <li class="breadcrumb-item active">Biscuits</li>
+            </ol>
+          </nav>
+          <div class="catalogue-header">
+            <h4>Biscuits</h4>
+            <p>Welcome to the world of crunchy delight! Are you craving the best chocolate chip cookies? You’ve come to the right place!</p>
+          </div>
+          <div class="catalogue-info row row-gap mb-4">
+            <div class="col-sm-6 h5 my-auto">77 Products</div>
+            <div class="col-sm-6 d-flex justify-content-start justify-content-sm-end">
+              <form>
+                <fieldset class="border p-2">
+                  <legend class="h6 text-muted w-auto px-2 m-0"><small>Sort items</small></legend>
+                  <select class="btn text-left">
+                    <option value="bestsell" selected>Best selling</option>
+                    <option value="price-asc">Price ascending</option>
+                    <option value="price-desc">Price descending</option>
+                    <option value="date-desc">Newest</option>
+                    <option value="date-asc">Oldest</option>
+                    <option value="alphabet-asc">A - Z</option>
+                    <option value="alphabet-desc">Z - A</option>
+                  </select>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="catalogue-products container pt-2">
+            <div class="row row-gap mb-4">
+              <div class="col-lg-3 col-md-6">
+                <div class="card light-pink-bg shadow">
+                  <a href="product-detail.html">
+                    <img src="assets/img/bar1.png" alt="" class="card-img m-auto p-3" />
+                  </a>
+                  <div class="card-body pt-0 pb-2 px-3">
+                    <a href="product-detail.html">
+                      <h6 class="mb-1">Milka</h6>
+                      <div class="card-description">Rocky Chocolate</div>
+                    </a>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                      <a class="my-auto" href="cart-confirmation.html">
+                        <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                      </a>
+                      <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                    </div>
+                  </div>
+                  <div class="product-badge">New</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card light-pink-bg shadow">
+                  <a href="product-detail.html">
+                    <img src="assets/img/bar1.png" alt="" class="card-img m-auto p-3" />
+                  </a>
+                  <div class="card-body pt-0 pb-2 px-3">
+                    <a href="product-detail.html">
+                      <h6 class="mb-1">Milka</h6>
+                      <div class="card-description">Rocky Chocolate</div>
+                    </a>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                      <a class="my-auto" href="cart-confirmation.html">
+                        <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                      </a>
+                      <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                    </div>
+                  </div>
+                  <div class="product-badge">New</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card light-pink-bg shadow">
+                  <a href="product-detail.html">
+                    <img src="assets/img/bar1.png" alt="" class="card-img m-auto p-3" />
+                  </a>
+                  <div class="card-body pt-0 pb-2 px-3">
+                    <a href="product-detail.html">
+                      <h6 class="mb-1">Milka</h6>
+                      <div class="card-description">Rocky Chocolate</div>
+                    </a>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                      <a class="my-auto" href="cart-confirmation.html">
+                        <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                      </a>
+                      <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                    </div>
+                  </div>
+                  <div class="product-badge">New</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card light-pink-bg shadow">
+                  <a href="product-detail.html">
+                    <img src="assets/img/bar1.png" alt="" class="card-img m-auto p-3" />
+                  </a>
+                  <div class="card-body pt-0 pb-2 px-3">
+                    <a href="product-detail.html">
+                      <h6 class="mb-1">Milka</h6>
+                      <div class="card-description">Rocky Chocolate</div>
+                    </a>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                      <a class="my-auto" href="cart-confirmation.html">
+                        <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                      </a>
+                      <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                    </div>
+                  </div>
+                  <div class="product-badge">New</div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-gap mb-4">
+              <div class="col-lg-3 col-md-6">
+                <div class="card light-pink-bg shadow">
+                  <a href="product-detail.html">
+                    <img src="assets/img/biscuit1.png" alt="" class="card-img m-auto p-3" />
+                  </a>
+                  <div class="card-body pt-0 pb-2 px-3">
+                    <a href="product-detail.html">
+                      <h6 class="mb-1">Milka</h6>
+                      <div class="card-description">Rocky Chocolate</div>
+                    </a>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                      <a class="my-auto" href="cart-confirmation.html">
+                        <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                      </a>
+                      <div>
+                        <span class="dark-pink mr-1"><s>€4,00</s></span>
+                        <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-badge">-15%</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card light-pink-bg shadow">
+                  <a href="product-detail.html">
+                    <img src="assets/img/biscuit1.png" alt="" class="card-img m-auto p-3" />
+                  </a>
+                  <div class="card-body pt-0 pb-2 px-3">
+                    <a href="product-detail.html">
+                      <h6 class="mb-1">Milka</h6>
+                      <div class="card-description">Rocky Chocolate</div>
+                    </a>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                      <a class="my-auto" href="cart-confirmation.html">
+                        <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                      </a>
+                      <div>
+                        <span class="dark-pink mr-1"><s>€4,00</s></span>
+                        <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-badge">-15%</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card light-pink-bg shadow">
+                  <a href="product-detail.html">
+                    <img src="assets/img/biscuit1.png" alt="" class="card-img m-auto p-3" />
+                  </a>
+                  <div class="card-body pt-0 pb-2 px-3">
+                    <a href="product-detail.html">
+                      <h6 class="mb-1">Milka</h6>
+                      <div class="card-description">Rocky Chocolate</div>
+                    </a>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                      <a class="my-auto" href="cart-confirmation.html">
+                        <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                      </a>
+                      <div>
+                        <span class="dark-pink mr-1"><s>€5,66</s></span>
+                        <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-badge">-35%</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card light-pink-bg shadow">
+                  <a href="product-detail.html">
+                    <img src="assets/img/biscuit1.png" alt="" class="card-img m-auto p-3" />
+                  </a>
+                  <div class="card-body pt-0 pb-2 px-3">
+                    <a href="product-detail.html">
+                      <h6 class="mb-1">Milka</h6>
+                      <div class="card-description">Rocky Chocolate</div>
+                    </a>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                      <a class="my-auto" href="cart-confirmation.html">
+                        <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                      </a>
+                      <div>
+                        <span class="dark-pink mr-1"><s>€8,00</s></span>
+                        <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-badge">-90%</div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-gap mb-4">
+              <div class="col-lg-3 col-md-6">
+                <div class="card light-pink-bg shadow">
+                  <a href="product-detail.html">
+                    <img src="assets/img/bar1.png" alt="" class="card-img m-auto p-3" />
+                  </a>
+                  <div class="card-body pt-0 pb-2 px-3">
+                    <a href="product-detail.html">
+                      <h6 class="mb-1">Milka</h6>
+                      <div class="card-description">Rocky Chocolate</div>
+                    </a>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                      <a class="my-auto" href="cart-confirmation.html">
+                        <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                      </a>
+                      <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card light-pink-bg shadow">
+                  <a href="product-detail.html">
+                    <img src="assets/img/biscuit2.png" alt="" class="card-img m-auto p-3" />
+                  </a>
+                  <div class="card-body pt-0 pb-2 px-3">
+                    <a href="product-detail.html">
+                      <h6 class="mb-1">Milka</h6>
+                      <div class="card-description">Rocky Chocolate</div>
+                    </a>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                      <a class="my-auto" href="cart-confirmation.html">
+                        <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                      </a>
+                      <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card light-pink-bg shadow">
+                  <a href="product-detail.html">
+                    <img src="assets/img/biscuit2.png" alt="" class="card-img m-auto p-3" />
+                  </a>
+                  <div class="card-body pt-0 pb-2 px-3">
+                    <a href="product-detail.html">
+                      <h6 class="mb-1">Milka</h6>
+                      <div class="card-description">Rocky Chocolate</div>
+                    </a>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                      <a class="my-auto" href="cart-confirmation.html">
+                        <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                      </a>
+                      <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card light-pink-bg shadow">
+                  <a href="product-detail.html">
+                    <img src="assets/img/biscuit2.png" alt="" class="card-img m-auto p-3" />
+                  </a>
+                  <div class="card-body pt-0 pb-2 px-3">
+                    <a href="product-detail.html">
+                      <h6 class="mb-1">Milka</h6>
+                      <div class="card-description">Rocky Chocolate</div>
+                    </a>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                      <a class="my-auto" href="cart-confirmation.html">
+                        <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                      </a>
+                      <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-gap mb-4">
+              <div class="col-lg-3 col-md-6">
+                <div class="card light-pink-bg shadow">
+                  <a href="product-detail.html">
+                    <img src="assets/img/cake1.png" alt="" class="card-img m-auto p-3" />
+                  </a>
+                  <div class="card-body pt-0 pb-2 px-3">
+                    <a href="product-detail.html">
+                      <h6 class="mb-1">Milka</h6>
+                      <div class="card-description">Rocky Chocolate</div>
+                    </a>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                      <a class="my-auto" href="cart-confirmation.html">
+                        <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                      </a>
+                      <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card light-pink-bg shadow">
+                  <a href="product-detail.html">
+                    <img src="assets/img/cake1.png" alt="" class="card-img m-auto p-3" />
+                  </a>
+                  <div class="card-body pt-0 pb-2 px-3">
+                    <a href="product-detail.html">
+                      <h6 class="mb-1">Milka</h6>
+                      <div class="card-description">Rocky Chocolate</div>
+                    </a>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                      <a class="my-auto" href="cart-confirmation.html">
+                        <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                      </a>
+                      <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card light-pink-bg shadow">
+                  <a href="product-detail.html">
+                    <img src="assets/img/cupcake1.png" alt="" class="card-img m-auto p-3" />
+                  </a>
+                  <div class="card-body pt-0 pb-2 px-3">
+                    <a href="product-detail.html">
+                      <h6 class="mb-1">Milka</h6>
+                      <div class="card-description">Rocky Chocolate</div>
+                    </a>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                      <a class="my-auto" href="cart-confirmation.html">
+                        <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                      </a>
+                      <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card light-pink-bg shadow">
+                  <a href="product-detail.html">
+                    <img src="assets/img/cupcake1.png" alt="" class="card-img m-auto p-3" />
+                  </a>
+                  <div class="card-body pt-0 pb-2 px-3">
+                    <a href="product-detail.html">
+                      <h6 class="mb-1">Milka</h6>
+                      <div class="card-description">Rocky Chocolate</div>
+                    </a>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                      <a class="my-auto" href="cart-confirmation.html">
+                        <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                      </a>
+                      <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalogue-pagination mt-5">
+            <nav class="d-flex justify-content-center">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#">&laquo;</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">&lsaquo;</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">&rsaquo;</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">&raquo;</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer Start -->
+    <footer class="border-top">
+      <div class="container pt-md-4 pt-2 pb-md-2">
+        <div class="row">
+          <div class="col-md-7 col-12">
+            <div class="row">
+              <div class="col-md-6 col-12 mb-md-0 mb-2">
+                <ul class="list-unstyled">
+                  <li><a href="">About us</a></li>
+                  <li><a href="">Contact us</a></li>
+                  <li><a href="">Terms & conditions</a></li>
+                  <li><a href="">Privacy policy</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-12 mb-md-0 mb-2">
+                <ul class="list-unstyled">
+                  <li><a href="">Shipping policy</a></li>
+                  <li><a href="">Orders & Returns</a></li>
+                  <li><a href="">Allergy information</a></li>
+                  <li><a href="">FAQ</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-12 mb-md-0 mb-3">
+            <h6>Subscribe for sweet news & deals</h6>
+            <form id="form-subscribe" action="#">
+              <div class="input-group d-flex">
+                <input class="form-control" type="email" placeholder="Enter e-mail address" />
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-outline-dark form-control submit">Subscribe</button>
+                </div>
+              </div>
+              <small class="text-muted float-left ml-1">Get best discounts to your mailbox</small>
+            </form>
+          </div>
+        </div>
+        <div class="row mt-md-3 pt-md-3 border-top">
+          <div class="col-md-6 col-12 mb-md-0 mb-4">
+            <p class="copyright mb-0">
+              Copyright ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Dlhy & Hrytsyna
+            </p>
+          </div>
+          <div class="col-md-6 col-12 text-md-right text-left">
+            <ul class="p-0">
+              <li class="d-inline mx-2">
+                <a href=""><i class="fab fa-facebook fa-2x text-muted"></i></a>
+              </li>
+              <li class="d-inline mx-2">
+                <a href=""><i class="fab fa-instagram fa-2x text-muted"></i></a>
+              </li>
+              <li class="d-inline mx-2">
+                <a href=""><i class="fab fa-twitter fa-2x text-muted"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

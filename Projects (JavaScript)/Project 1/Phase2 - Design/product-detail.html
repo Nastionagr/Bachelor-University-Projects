@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Om Nom Nom | Milka Dark chocolate bar with hazelnuts</title>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="sticky-top container-fluid">
+      <nav id="navbar-main" class="navbar navbar-expand-md justify-content-between row dark-pink-bg">
+        <div class="col-md-3 col-6 p-0 d-flex justify-content-start">
+          <a href="homepage.html">
+            <img class="h-100" src="assets/img/logo150x60.png" alt="" />
+          </a>
+        </div>
+        <div class="col-md-6 p-0 input-group d-none d-md-flex justify-content-center">
+          <input class="header-searchbar form-control" type="text" placeholder="Search products..." />
+          <div class="input-group-append">
+            <button class="btn light-pink-bg">
+              <i class="fas fa-search dark-pink"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 p-0 d-flex justify-content-end align-items-center">
+          <div class="header-link mx-sm-2 mx-1 my-0">
+            <a href="login.html">
+              <i class="fas fa-user-circle fa-2x light-pink"></i>
+            </a>
+          </div>
+          <div class="header-link mx-sm-2 mx-1 my-0">
+            <a href="cart-overview.html">
+              <i class="fas fa-shopping-cart fa-2x light-pink"></i>
+              <span id="cart-items-count">5 </span>
+            </a>
+          </div>
+          <button class="navbar-toggler ml-sm-3 ml-1 my-0" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+            <i class="fas fa-bars fa-lg light-pink"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Desktop Nav -->
+      <nav id="header-menu" class="navbar d-none d-md-flex row border-bottom light-pink-bg p-0">
+        <ul>
+          <li class="dropdown d-flex align-items-center">
+            <a href="product-catalogue.html">Sweets</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="product-catalogue.html">Bars</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Biscuits</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Bonbons</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Chocolate</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Gums</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Licorice</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Lollipops</a></li>
+            </ul>
+          </li>
+          <li class="dropdown d-flex align-items-center">
+            <a href="product-catalogue.html">Gifts</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="product-catalogue.html">Gifts for Him</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Gifts for Her</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Nameday Gifts</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Birthday Gifts</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Wedding Gifts</a></li>
+            </ul>
+          </li>
+          <li class="dropdown d-flex align-items-center">
+            <a href="product-catalogue.html">Bulk Candy</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="product-catalogue.html">Boxes</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Jars</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Pouches</a></li>
+            </ul>
+          </li>
+          <li class="dropdown d-flex align-items-center">
+            <a href="product-catalogue.html">Sugar Free & Vegan</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="product-catalogue.html">Vegan</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Sugar Free</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Gluten Free</a></li>
+              <li class="dropdown-item"><a href="product-catalogue.html">Lactose Free</a></li>
+            </ul>
+          </li>
+          <li class="d-flex align-items-center"><a href="product-catalogue.html">Sale</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Nav -->
+      <nav id="navbar-mobile" class="collapse d-md-none text-left light-pink-bg row p-2">
+        <ul class="navbar-nav w-100">
+          <li class="nav-item">
+            <a href="product-catalogue.html">Sweets</a>
+            <i class="fas fa-chevron-down float-right"></i>
+            <ul class="navbar-nav collapse pl-3">
+              <li class="nav-item"><a href="product-catalogue.html">Bars</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Biscuits</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Bonbons</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Chocolate</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Gums</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Licorice</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Lollipops</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="product-catalogue.html">Gifts</a>
+            <i class="fas fa-chevron-down float-right"></i>
+            <ul class="navbar-nav collapse pl-3">
+              <li class="nav-item"><a href="product-catalogue.html">Gifts for Him</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Gifts for Her</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Nameday Gifts</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Birthday Gifts</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Wedding Gifts</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="product-catalogue.html">Bulk Candy</a>
+            <i class="fas fa-chevron-down float-right"></i>
+            <ul class="navbar-nav collapse pl-3">
+              <li class="nav-item"><a href="product-catalogue.html">Boxes</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Jars</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Pouches</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="product-catalogue.html">Sugar Free & Vegan</a>
+            <i class="fas fa-chevron-down float-right"></i>
+            <ul class="navbar-nav collapse pl-3">
+              <li class="nav-item"><a href="product-catalogue.html">Vegan</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Sugar Free</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Gluten Free</a></li>
+              <li class="nav-item"><a href="product-catalogue.html">Lactose Free</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="product-catalogue.html">Sale</a></li>
+          <li class="nav-item mt-3">
+            <div class="input-group p-0">
+              <input class="header-searchbar form-control" type="text" placeholder="Search products..." />
+              <div class="input-group-append">
+                <button class="btn bg-white border">
+                  <i class="fas fa-search dark-pink"></i>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <main class="content container my-4 text-left">
+      <!-- Path to product -->
+      <nav class="catalogue-breadcrumb">
+        <ol class="breadcrumb px-1">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item d-block d-sm-none">...</li>
+          <li class="breadcrumb-item d-none d-sm-block"><a href="#">Sweets</a></li>
+          <li class="breadcrumb-item d-none d-sm-block"><a href="#">Bars</a></li>
+          <li class="breadcrumb-item active">Milka Dark chocolate bar with hazelnuts</li>
+        </ol>
+      </nav>
+      <!-- Product details container -->
+      <div class="container flex-fill">
+        <!-- Images & Description -->
+        <div class="row">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <div class="row">
+              <img class="img-fluid" src="assets/img/biscuit1.png" alt="" />
+            </div>
+            <div class="row">
+              <div id="product-images" class="px-3 mx-auto owl-carousel">
+                <div class="item col p-0">
+                  <img class="img-fluid" src="assets/img/biscuit1.png" alt="" />
+                </div>
+                <div class="item col p-0">
+                  <img class="img-fluid" src="assets/img/biscuit2.png" alt="" />
+                </div>
+                <div class="item col p-0">
+                  <img class="img-fluid" src="assets/img/cake1.png" alt="" />
+                </div>
+                <div class="item col p-0">
+                  <img class="img-fluid" src="assets/img/cupcake1.png" alt="" />
+                </div>
+                <div class="item col p-0">
+                  <img class="img-fluid" src="assets/img/bar1.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pl-0 pl-lg-5 col-lg-7">
+            <div class="">
+              <h3>Milka</h3>
+              <h4>Dark chocolate bar with hazelnuts</h4>
+              <h4>295g</h4>
+              <p class="pb-4 pt-2 text-justify">
+                Rich dark chocolate made from the best cocoa beans sustainably sourced from Tasmania. Smooth flavour of alpine milk combines with chopped pieces
+                of hazelnuts to make delicious taste.
+              </p>
+              <h6>Ingredients:</h6>
+              <p class="text-justify">Milk, Sugar, Cocoa butter, Hazelnut pieces, Cocoa mass, Milk solids, Soy lecithin.</p>
+              <h6>Allergens:</h6>
+              <p class="mb-0 text-justify">Contains: Hazelnuts, Milk, Soy.</p>
+              <p class="text-justify">May contain: Wheat, Peanuts.</p>
+            </div>
+            <hr class="m-4" />
+            <div class="d-flex justify-content-between">
+              <h3>€ 1,59</h3>
+              <div class="d-flex">
+                <input value="1" min="1" class="form-control quantity-input" type="number" />
+                <button class="btn btn-outline-dark buy-btn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Additional specification -->
+        <div class="row row-gap col-12 my-5 justify-content-around">
+          <div class="col-lg-5 border rounded">
+            <table class="product-information table table-sm table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Product information</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Catalogue number</td>
+                  <td>11960</td>
+                </tr>
+                <tr>
+                  <td>Country of origin</td>
+                  <td>Germany</td>
+                </tr>
+                <tr>
+                  <td>Category</td>
+                  <td>Sweets, bars</td>
+                </tr>
+                <tr>
+                  <td>Brand</td>
+                  <td>Milka</td>
+                </tr>
+                <tr>
+                  <td>Weight</td>
+                  <td>295g</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-lg-5 border rounded">
+            <table class="product-information table table-sm table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Nutrition values</th>
+                  <th scope="col">per 100g</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Energy</td>
+                  <td>1895 kJ / 463 kcal</td>
+                </tr>
+                <tr>
+                  <td>Fat</td>
+                  <td>22 g</td>
+                </tr>
+                <tr>
+                  <td class="pl-4">Saturated Fat</td>
+                  <td>12 g</td>
+                </tr>
+                <tr>
+                  <td>Carbohydrates</td>
+                  <td>55 g</td>
+                </tr>
+                <tr>
+                  <td class="pl-4">Sugars</td>
+                  <td>38 g</td>
+                </tr>
+                <tr>
+                  <td>Protein</td>
+                  <td>6,1 g</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products recommendation -->
+      <div class="d-block my-4 p-4 border">
+        <h4 class="dark-pink bg-white text-center">Recommended for you</h4>
+        <div id="recommendation" class="col-sm-12 col-10 px-0 mx-auto owl-carousel">
+          <div class="col item">
+            <div class="card light-pink-bg shadow">
+              <a href="product-detail.html">
+                <img src="assets/img/biscuit1.png" alt="" class="card-img m-auto p-3" />
+              </a>
+              <div class="card-body pt-0 pb-2 px-3">
+                <a href="product-detail.html">
+                  <h6 class="mb-1">Milka</h6>
+                  <div class="card-description">Rocky Chocolate</div>
+                </a>
+                <div class="mt-1 d-flex justify-content-between align-items-center">
+                  <a class="my-auto" href="cart-confirmation.html">
+                    <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                  </a>
+                  <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                </div>
+              </div>
+              <div class="product-badge">New</div>
+            </div>
+          </div>
+          <div class="col item">
+            <div class="card light-pink-bg shadow">
+              <a href="product-detail.html">
+                <img src="assets/img/cake1.png" alt="" class="card-img m-auto p-3" />
+              </a>
+              <div class="card-body pt-0 pb-2 px-3">
+                <a href="product-detail.html">
+                  <h6 class="mb-1">Milka</h6>
+                  <div class="card-description">Rocky Chocolate</div>
+                </a>
+                <div class="mt-1 d-flex justify-content-between align-items-center">
+                  <a class="my-auto" href="cart-confirmation.html">
+                    <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                  </a>
+                  <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                </div>
+              </div>
+              <div class="product-badge">New</div>
+            </div>
+          </div>
+          <div class="col item">
+            <div class="card light-pink-bg shadow">
+              <a href="product-detail.html">
+                <img src="assets/img/cupcake1.png" alt="" class="card-img m-auto p-3" />
+              </a>
+              <div class="card-body pt-0 pb-2 px-3">
+                <a href="product-detail.html">
+                  <h6 class="mb-1">Milka</h6>
+                  <div class="card-description">Rocky Chocolate</div>
+                </a>
+                <div class="mt-1 d-flex justify-content-between align-items-center">
+                  <a class="my-auto" href="cart-confirmation.html">
+                    <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                  </a>
+                  <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                </div>
+              </div>
+              <div class="product-badge">New</div>
+            </div>
+          </div>
+          <div class="col item">
+            <div class="card light-pink-bg shadow">
+              <a href="product-detail.html">
+                <img src="assets/img/bar1.png" alt="" class="card-img m-auto p-3" />
+              </a>
+              <div class="card-body pt-0 pb-2 px-3">
+                <a href="product-detail.html">
+                  <h6 class="mb-1">Milka</h6>
+                  <div class="card-description">Rocky Chocolate</div>
+                </a>
+                <div class="mt-1 d-flex justify-content-between align-items-center">
+                  <a class="my-auto" href="cart-confirmation.html">
+                    <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                  </a>
+                  <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                </div>
+              </div>
+              <div class="product-badge">New</div>
+            </div>
+          </div>
+          <div class="col item">
+            <div class="card light-pink-bg shadow">
+              <a href="product-detail.html">
+                <img src="assets/img/bar1.png" alt="" class="card-img m-auto p-3" />
+              </a>
+              <div class="card-body pt-0 pb-2 px-3">
+                <a href="product-detail.html">
+                  <h6 class="mb-1">Milka</h6>
+                  <div class="card-description">Rocky Chocolate</div>
+                </a>
+                <div class="mt-1 d-flex justify-content-between align-items-center">
+                  <a class="my-auto" href="cart-confirmation.html">
+                    <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                  </a>
+                  <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                </div>
+              </div>
+              <div class="product-badge">New</div>
+            </div>
+          </div>
+          <div class="col item">
+            <div class="card light-pink-bg shadow">
+              <a href="product-detail.html">
+                <img src="assets/img/bar1.png" alt="" class="card-img m-auto p-3" />
+              </a>
+              <div class="card-body pt-0 pb-2 px-3">
+                <a href="product-detail.html">
+                  <h6 class="mb-1">Milka</h6>
+                  <div class="card-description">Rocky Chocolate</div>
+                </a>
+                <div class="mt-1 d-flex justify-content-between align-items-center">
+                  <a class="my-auto" href="cart-confirmation.html">
+                    <i class="fas fa-shopping-cart font-25 dark-pink"></i>
+                  </a>
+                  <span class="font-10 dark-pink"><strong>€3,59</strong></span>
+                </div>
+              </div>
+              <div class="product-badge">New</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Start -->
+    <footer class="border-top">
+      <div class="container pt-md-4 pt-2 pb-md-2">
+        <div class="row">
+          <div class="col-md-7 col-12">
+            <div class="row">
+              <div class="col-md-6 col-12 mb-md-0 mb-2">
+                <ul class="list-unstyled">
+                  <li><a href="">About us</a></li>
+                  <li><a href="">Contact us</a></li>
+                  <li><a href="">Terms & conditions</a></li>
+                  <li><a href="">Privacy policy</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-12 mb-md-0 mb-2">
+                <ul class="list-unstyled">
+                  <li><a href="">Shipping policy</a></li>
+                  <li><a href="">Orders & Returns</a></li>
+                  <li><a href="">Allergy information</a></li>
+                  <li><a href="">FAQ</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-12 mb-md-0 mb-3">
+            <h6>Subscribe for sweet news & deals</h6>
+            <form id="form-subscribe" action="#">
+              <div class="input-group d-flex">
+                <input class="form-control" type="email" placeholder="Enter e-mail address" />
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-outline-dark form-control submit">Subscribe</button>
+                </div>
+              </div>
+              <small class="text-muted float-left ml-1">Get best discounts to your mailbox</small>
+            </form>
+          </div>
+        </div>
+        <div class="row mt-md-3 pt-md-3 border-top">
+          <div class="col-md-6 col-12 mb-md-0 mb-4">
+            <p class="copyright mb-0">
+              Copyright ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Dlhy & Hrytsyna
+            </p>
+          </div>
+          <div class="col-md-6 col-12 text-md-right text-left">
+            <ul class="p-0">
+              <li class="d-inline mx-2">
+                <a href=""><i class="fab fa-facebook fa-2x text-muted"></i></a>
+              </li>
+              <li class="d-inline mx-2">
+                <a href=""><i class="fab fa-instagram fa-2x text-muted"></i></a>
+              </li>
+              <li class="d-inline mx-2">
+                <a href=""><i class="fab fa-twitter fa-2x text-muted"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
